@@ -1,36 +1,29 @@
 
 <HTML>
     <head>
-    <!--
         <script src="script.js"></script>
-        <script src="euler.js"></script>
-    -->
-        <script>
-            let problem1 = () => {
-                window.location="problem1.html";
-            }
-            let problem2 = () => {
-                window.location="problem2.html";
-            }
-            let problem3 = () => {
-                window.location="problem3.html";
-            }
-            let openTeste = () => {
-                window.location="test_Input.html";
-            }
-        </script>
     </head>
     <body>
-        <p>
-            Hello World!
-        </p>
-            <br><br>
-        <button onclick="openTeste()">Open Teste</button>
-            <br><br>
-        <button onclick="problem1()">Open Problem 1</button>
-            <br><br>
-        <button onclick="problem2()">Open Problem 2</button>
-            <br><br>
-        <button onclick="problem3()">Open Problem 3</button>
+        <body>
+            <h4>Create a function to find the sum of all the multiples of a or b below n.
+                (a,b,n) are function parameters</h4>    
+                <br><br>
+                
+            <label>Insert a first number : </label>
+            <input type="number" id="inputNumberA">
+                <br><br>
+            <label>Insert a second number : </label>
+            <input type="number" id="inputNumberB">
+                <br><br>
+            <label>Insert a number limit to calculate : </label>
+            <input type="number" id="inputNumberN">
+                <br><br><br>
+    
+            <input type="button" onclick="toCalc()" value="Calculate >>">
+            
+            <p>The sum of all the multiples is:  
+                <b><span id="result"></span></b>.
+            </p>
+        </body>
     </body>
 </HTML>

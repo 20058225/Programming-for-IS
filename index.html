@@ -1,29 +1,30 @@
 
 <HTML>
     <head>
+        <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
     </head>
     <body>
-        <body>
+        <div>
             <h4>Create a function to find the sum of all the multiples of a or b below n.
                 (a,b,n) are function parameters</h4>    
                 <br><br>
                 
             <label>Insert a first number : </label>
-            <input type="number" id="inputNumberA">
+            <input type="number" placeholder="" id="inputNumberA">
                 <br><br>
             <label>Insert a second number : </label>
-            <input type="number" id="inputNumberB">
+            <input type="number" placeholder="" id="inputNumberB">
                 <br><br>
             <label>Insert a number limit to calculate : </label>
-            <input type="number" id="inputNumberN">
+            <input type="number" placeholder="" id="inputNumberN">
                 <br><br><br>
-    
-            <input type="button" onclick="toCalc()" value="Calculate >>">
+
+            <input id="btn" type="button" onclick="toCalc()" value="Calculate >>">
             
             <p>The sum of all the multiples is:  
                 <b><span id="result"></span></b>.
             </p>
-        </body>
+        </div>
     </body>
 </HTML>

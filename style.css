@@ -11,3 +11,6 @@ input{
     height: 30px;
     border-radius: 20%
 }
+#answer{
+    display: none;
+}

@@ -11,7 +11,6 @@
     3. Allow the user to enter the parameters via text box(es)
     and alert them to the output
 */
-
 let sumNumbers = 0;
 
 let toCalc = () => {
@@ -22,6 +21,8 @@ let toCalc = () => {
         if((i % numberA == 0) || (i % numberB ==0))
             sumNumbers += i;       
     } 
+    let show = document.getElementById("answer");    
+        show.style.display = "block";
     document.getElementById("result").innerHTML = sumNumbers; //update element on HTML
     alert("\n The sum of all the multiples is:  " + sumNumbers)   
 }

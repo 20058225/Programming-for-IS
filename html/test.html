@@ -1,0 +1,56 @@
+<HTML>
+    <head>
+        <script src="https://kit.fontawesome.com/774efa278d.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+        <link rel="stylesheet" href="/style/style.css">
+        <script src="/script/script.js"></script>
+    </head>
+    <body>
+        <div id="head">
+            <input class="btn" id="btnIndex" type="button" onclick="openIndex()" value="Back to Index">            
+        </div>
+        <div id="body">
+            <h2>Arrays</h2>    
+            <div id="arrayA">
+                <h4><u>A.</u> Create a function which takes parameters a, b, l</h4>
+                    <div>
+                        <label>Insert a first number : </label>
+                        <input type="number"  id="inputNumberA" name="inputArray">
+                            <br><br>
+                        <label>Insert a second number : </label>
+                        <input type="number" id="inputNumberB" name="inputArray">
+                            <br><br>
+                        <label>Insert 3 numbers to calculate : </label>
+                        <input type="number" name="listNumb" id="inputNumberL">
+                        <input type="number" name="listNumb" id="inputNumberL1">
+                        <input type="number" name="listNumb" id="inputNumberL2">
+                            <br><br><br>
+
+                        <input class="btn" id="btnCalc" type="button" onclick="toCalc()" value="Calculate >>">
+                        <div id="answer" class="hide">
+                            <p>The sum of all the multiples is:  
+                                <b><span id="result"></span></b>.
+                            </p>
+                            <p>The list of integers :  
+                                <b><span id="listInteger"></span></b>.
+                            </p>
+                        </div>
+                        <input class="btn" id="btnClean" type="button" onclick="toClean()" value="Clean >>">
+                    </div>
+            </div>
+        <br><br>
+            
+            <h4><u>B.</u> Create a function which takes parameters a, l</h4>
+            <li><b>a</b> is a list of two integers</li>
+            <li><b>l</b> is a list of integers</li>
+            <li>find the sum of all the multiples of elements of a in <b>l</b></li>
+        
+        <br><br>
+            
+            <h4><u>C.</u> Create a function which takes parameters a, l</h4>
+            <li><b>a</b> is a list of integers</li>
+            <li><b>l</b> is a list of integers</li>
+            <li>find the sum of all the multiples of elements of a in <b>l</b></li>
+        </div>
+    </body>
+</HTML>

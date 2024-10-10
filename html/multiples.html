@@ -1,0 +1,36 @@
+<HTML>
+    <head>
+        <script src="https://kit.fontawesome.com/774efa278d.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+        <link rel="stylesheet" href="/style/style.css">
+        <script src="/script/script.js"></script>
+    </head>
+    <body>
+        <div id="head">
+            <input class="btn" id="btnIndex" type="button" onclick="openIndex()" value="Back to Index">            
+        </div>
+        <div id="body">
+            <h4>Create a function to find the sum of all the multiples of a or b below n.
+                (a, b, n) are function parameters</h4>    
+                <br>
+                
+            <label>Insert a first number : </label>
+            <input type="number"  id="inputNumberA">
+                <br><br>
+            <label>Insert a second number : </label>
+            <input type="number" id="inputNumberB">
+                <br><br>
+            <label>Insert a number limit to calculate : </label>
+            <input type="number" id="inputNumberN">
+                <br><br><br>
+
+            <input class="btn" id="btnCalc" type="button" onclick="toCalc()" value="Calculate >>">
+            
+            <p class="hide" id="answer">The sum of all the multiples is:  
+                <b><span id="result"></span></b>.
+            </p>
+
+            <input class="btn" id="btnClean" type="button" onclick="toClean()" value="Clean >>">            
+        </div>
+    </body>
+</HTML>

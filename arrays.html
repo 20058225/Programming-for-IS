@@ -1,57 +1,76 @@
-<HTML>
+<html>
     <head>
-        <script src="https://kit.fontawesome.com/774efa278d.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
-        <link rel="stylesheet" href="/style/style.css">
         <script src="/script/script.js"></script>
+        <link rel="stylesheet" href="style/style.css">
     </head>
+    <section id="header"></section>   
     <body>
-        <div id="head">
-            <input class="btn" id="btnIndex" type="button" onclick="openIndex()" value="Back to Index">            
-        </div>
-        <div id="body">
+        <section id="main">
             <h2>Arrays</h2>    
-            <div id="arrayA">
+            <div class="array">
                 <h4><u>A.</u> Create a function which takes parameters a, b, l</h4>
                 <li><b>l</b> is a list of integers</li>
                 <li>find the sum of all the multiples of <b>a</b> or <b>b</b> in <b>l</b></li>
-                    <br>
-                    <div>
-                        <label>Insert a first number : </label>
-                        <input type="number" id="inputNumberA" required>
-                            <br><br>
-                        <label>Insert a second number : </label>
-                        <input type="number" id="inputNumberB" required>
-                            <br><br>
-                        <label>Insert a number limit to calculate : </label>
-                        <input type="number" id="inputNumberL" required>
-                            <br><br><br>
-
-                        <input class="btn" id="btnCalc" type="button" onclick="toCalc()" value="Calculate >>">
-                        <div id="answer" class="hide">
-                            <p>The sum of all the multiples is:  
-                                <b><span id="result"></span></b>.
-                            </p>
-                            <p>The list of integers :  
-                                <b><span id="listInteger"></span></b>.
-                            </p>
-                        </div>
-                        <input class="btn" id="btnClean" type="button" onclick="toClean()" value="Clean >>">
+                <label>Insert a first number : </label>
+                    <input class="column" type="number" id="inputA" required><br>
+                <label>Insert a second number : </label>
+                    <input  class="column"type="number" id="inputB" required><br>
+                <label>A number to be calculate : </label>
+                    <input class="column" type="number" id="inputL" required><br>
+                <section class="btnToDo">
+                    <input class="btn" id="btnCalc" type="button" onclick="toCalc()" value="Calculate">
+                    <div id="answer" class="hide">
+                        <p>The sum of all the multiples is:  
+                            <b><span id="result"></span></b>.
+                        </p>
+                        <p>The list of integers :  
+                            <b><span id="listInteger"></span></b>.
+                        </p>
                     </div>
+                    <input class="btn" id="btnClean" type="button" onclick="toClean()" value="Clean">
+                </section>
             </div>
-        <br><br>
+
+            <div class="array" style="display: none;">
+                <h4><u>B.</u> Create a function which takes parameters a, l</h4>
+                <li><b>a</b> is a list of two integers</li>
+                <li><b>l</b> is a list of integers</li>
+                <li>find the sum of all the multiples of elements of a in <b>l</b></li>
+                <section class="btnToDo">
+                    <input class="btn" id="btnCalc" type="button" onclick="toCalc()" value="Calculate">
+                    <div id="answer" class="hide">
+                        <p>The sum of all the multiples is:  
+                            <b><span id="result"></span></b>.
+                        </p>
+                        <p>The list of integers :  
+                            <b><span id="listInteger"></span></b>.
+                        </p>
+                    </div>
+                    <input class="btn" id="btnClean" type="button" onclick="toClean()" value="Clean">
+                </section>
+            </div>
             
-            <h4><u>B.</u> Create a function which takes parameters a, l</h4>
-            <li><b>a</b> is a list of two integers</li>
-            <li><b>l</b> is a list of integers</li>
-            <li>find the sum of all the multiples of elements of a in <b>l</b></li>
-        
-        <br><br>
-            
-            <h4><u>C.</u> Create a function which takes parameters a, l</h4>
-            <li><b>a</b> is a list of integers</li>
-            <li><b>l</b> is a list of integers</li>
-            <li>find the sum of all the multiples of elements of a in <b>l</b></li>
-        </div>
+            <div class="array" style="display: none;">    
+                <h4><u>C.</u> Create a function which takes parameters a, l</h4>
+                <li><b>a</b> is a list of integers</li>
+                <li><b>l</b> is a list of integers</li>
+                <li>find the sum of all the multiples of elements of a in <b>l</b></li>
+                <section class="btnToDo">
+                    <input class="btn" id="btnCalc" type="button" onclick="toCalc()" value="Calculate">
+                    <div id="answer" class="hide">
+                        <p>The sum of all the multiples is:  
+                            <b><span id="result"></span></b>.
+                        </p>
+                        <p>The list of integers :  
+                            <b><span id="listInteger"></span></b>.
+                        </p>
+                    </div>
+                    <input class="btn" id="btnClean" type="button" onclick="toClean()" value="Clean">
+                </section>
+            </div>
+    </main>
+        <section id="footer"></section>
     </body>
-</HTML>
+</html>

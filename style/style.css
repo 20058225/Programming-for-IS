@@ -1,10 +1,77 @@
 body{
-    border-radius: 1em;
     padding: 1em;
+}
+h2{
+    text-align: center;
+}
+main{
+    height: 55%;
+    margin-left: 30%;
+}
+.main li{
+    margin: 1em;
+}
+.array .column{
+    margin: 2% 0% 2% 0%;
+}
+.btnToDo .btn, main .column{
+    margin: 3% 5% 0% 5%;
+}
+.header ul, main ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 3px;
+}
+.header li{
+    float: left;
+    min-width: 15%;
+}
+.header ul{
+    overflow: hidden;
+    background-color: #6A329F;
+}  
+.header li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}  
+.header li a:hover, .main li input:hover{
+    background-color: #d9d2e9;
+}
+.header{
+    font-size: 18px;
+}
+.footer, .header{
+    width: 90%;
+    font-family: sans-serif;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #674ea7;
+}
+footer .column {
+    box-sizing: border-box;
+    margin: 20px;
+}
+footer .column a{
+    text-decoration: none;
+    color: #bcbcbc;
+}
+footer .column p{
+    color: #ffffff;
+}
+.google-map{
+    width: 80%;
+}
+.google-map iframe{
+    border-radius: 30px;
+    height: 100%;
+    width: 100%;
     position: relative;
-    left: 5%;
-    margin-right: 10%;
-
 }
 input.btn{
     width: 120px;
@@ -13,68 +80,10 @@ input.btn{
 }
 .hide{
     display: none;
+    background-color: #674ea7;
+    width: 25%;
 }
-#arrayA{
-    padding: 5%;
-    border-style: solid;
-}
-ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    border-radius: 3px;
-}
-li{
+.array{
     float: left;
-}
-.main ul{
-    overflow: hidden;
-    background-color: #6A329F;
-}  
-.main li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-}  
-.main li a:hover, input.btn{
-    background-color: #d9d2e9;
-}
-footer{
-    display: block;
-    border-radius: 10px;
-    padding: 10px;
-    position: relative;
-}
-footer a{
-    text-decoration: none;
-    color: #000000;
-}
-footer .row{
-    display: flex;
-}
-footer .column{
-    float: left;
-    padding: 10px;
-    height: 200px;
-}
-footer .left{
-    width: 15%;
-    padding-top: 3%;
-}
-footer .right{
-    width: 70%;
-}
-.google-map {
-    top: 15px;
-    position: absolute;
-}
-.google-map iframe {
-    border-radius: 30px;
-    height: 95%;
-    width: 90%;
-    left: 35%;
-    top: 0;
-    position: relative;
-}
+    padding: 0px 40px 20px 40px; 
+  }

@@ -22,11 +22,15 @@ function openArray () {
 function openTest() {
     window.location="test.html";
 }
+function openTest3() {
+    window.location="test3.html";
+}
 function toCalc () {
     let sumNumber = 0;
     let numberA = document.getElementById('inputA').value; //get element from HTML
     let numberB = document.getElementById('inputB').value; 
     let numberN = document.getElementById('inputN').value; 
+
     for (i = 0; i < numberN; i++) {
         if((i % numberA == 0) || (i % numberB == 0))
             sumNumber += i;  
